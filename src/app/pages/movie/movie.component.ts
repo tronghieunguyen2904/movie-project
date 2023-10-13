@@ -5,6 +5,6 @@ import { Component } from '@angular/core';
   templateUrl: './movie.component.html',
   styleUrls: ['./movie.component.css']
 })
-export class MovieComponent {
+export class MovieComponentPage {
 
 }

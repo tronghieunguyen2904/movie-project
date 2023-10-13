@@ -1,7 +1,8 @@
 .slider-container{
     width: 100%;
     height: 790px;
-    background: url("https://wordpress.iqonic.design/product/wp/streamit/wp-content/uploads/2019/03/movies01.jpg") center/cover no-repeat;
+    margin-bottom: 100px;
+    background: url("https://wordpress.iqonic.design/product/wp/streamit/wp-content/uploads/2019/02/zombie-island-banner-1.jpg") center/cover no-repeat;
 }
 .content-slider{
     width: 100%;
@@ -88,4 +89,40 @@ span{
     to {
       stroke-dashoffset: 0;
     }
+  }
+  .home-movie{
+    padding: 0 100px;
+    width: 100%;
+  }
+  .list-movie{
+    margin-bottom: 140px;
+  }
+  .img-movie-box{
+    width: 200px!important;
+    position: relative;
+  }
+  .img-movie-box img{
+    width: 100%;
+  }
+  .title-list-movie h4{
+    color: #ffffff;
+    font-weight: 500;
+    font-size: 21px;
+    margin-bottom: 10px;
+  }
+  .title-list-movie h5{
+    color: #e40813;
+    font-weight: 500;
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+  .content-movie-box{
+    position: absolute;
+    width: 200px!important;
+    padding: 0px 10px;
+    left: 0;
+    bottom: 0;
+    width: auto;
+    right: 0;
+    color: #ffffff;
   }

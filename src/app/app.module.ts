@@ -7,12 +7,14 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { CarouselModule } from './carousel/carousel.module';
 import { HomeComponent } from './pages/home/home.component';
-import { MovieComponent } from './pages/movie/movie.component';
+import { MovieComponentPage } from './pages/movie/movie.component';
+import { MovieComponent } from './pages/home/movie.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HomeComponent,
+    MovieComponentPage,
     MovieComponent
   ],
   imports: [

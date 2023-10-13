@@ -1,7 +1,7 @@
 <div class="slider-container">
     <div class="content-slider">
       <div class="content-left">
-        <h1>The Illusion</h1>
+        <h1>Zombie World</h1>
         <div class="d-flex align-items-center">
             <div class="d-flex justify-content-around me-2">
                 <fa-icon [icon]="faStar" class="star-rating mx-1"></fa-icon>
@@ -40,6 +40,26 @@
             <polygon points="10 8 16 12 10 16 10 8" />
           </svg> 
           <h2 class="mx-1">Watch Trailer</h2>
+      </div>
+    </div>
+</div>
+<div class="home-movie">
+    <div class="list-movie">
+        <div class="title-list-movie d-flex justify-content-between my-3">
+            <h4>New Movies</h4>
+            <h5>View All</h5>
+        </div>
+        <div class="d-flex justify-content-between">
+            <movie-component *ngFor="let i of [0, 1, 2, 3, 4]"></movie-component>
+        </div>
+    </div>
+    <div>
+        <div class="title-list-movie d-flex justify-content-between my-3">
+          <h4>Latest Movies</h4>
+          <h5>View All</h5>
+        </div>
+        <div class="d-flex justify-content-between">
+          <movie-component *ngFor="let i of [0, 1, 2, 3, 4]"></movie-component>
       </div>
     </div>
 </div>
