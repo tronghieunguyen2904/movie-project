@@ -47,6 +47,7 @@ span{
     width: 600px;
     height: 80px;
     color: #ffffff;
+    text-align: initial;
 }
 .text-genes{
     font-size: 18px;
@@ -125,4 +126,15 @@ span{
     width: auto;
     right: 0;
     color: #ffffff;
+  }
+  .carousel-caption{
+    width: 100%;
+    height: 100%;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    padding: 0;
+  }
+  .carousel-control-next, .carousel-control-prev{
+    width: 10%;
   }
