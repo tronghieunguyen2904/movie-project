@@ -1,0 +1,48 @@
+<div class="slider-container">
+    <div class="content-slider">
+      <div class="content-left">
+        <h1>The Illusion</h1>
+        <div class="d-flex align-items-center">
+            <div class="d-flex justify-content-around me-2">
+                <fa-icon [icon]="faStar" class="star-rating mx-1"></fa-icon>
+                <fa-icon [icon]="faStar" class="star-rating mx-1"></fa-icon>
+                <fa-icon [icon]="faStar" class="star-rating mx-1"></fa-icon>
+                <fa-icon [icon]="faStar" class="star-rating mx-1"></fa-icon>
+            </div>
+            <div class="d-flex align-items-center me-2">
+              <p class="mx-1 number-rating">4</p>
+              <img src="https://wordpress.iqonic.design/product/wp/streamit/wp-content/themes/streamit-theme/assets/images/redux/IMDB_Logo.svg" alt="">
+            </div>
+            <div class="d-flex justify-content-around align-items-center">
+                <span class="genres-movie mx-2" >Action</span>
+                <span>1hr:22mins</span>
+            </div>
+        </div>
+        <div class="text-slider">
+          <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Perferendis blanditiis eos ullam ipsum vero quibusdam eligendi minima? Reiciendis iste quasi fuga est, modi, quas saepe reprehenderit, a quos corrupti quidem?</p>
+        </div>
+        <div class="d-flex py-2">
+            <p class="me-2 text-genes">Genes</p>
+            <div class="d-flex list-genes-text">
+                <p>Action ,</p>
+                <p>Fatasy , </p>
+                <p>Horror , </p>
+                <p>Mystery </p>
+            </div>
+        </div>
+        <div>
+            <button class="btn-play-silder"><fa-icon [icon]="faPlay" class="me-1"></fa-icon> Play Now</button>
+        </div>
+      </div>
+      <div class="content-right d-flex align-items-center">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="100" height="100" fill="none" stroke="#fff" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" class="play-button">
+            <circle cx="12" cy="12" r="10" />
+            <polygon points="10 8 16 12 10 16 10 8" />
+          </svg> 
+          <h2 class="mx-1">Watch Trailer</h2>
+      </div>
+    </div>
+</div>
+
+
+<router-outlet></router-outlet>

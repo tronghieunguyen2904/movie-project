@@ -1,4 +1,4 @@
-<nav class="navbar navbar-expand-lg">
+<nav class="navbar navbar-expand-lg fixed-top" [ngStyle] = "navbg">
   <div class="container-fluid">
     <a class="navbar-brand"  href="#">Movie Stream</a>
     <!-- <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -37,36 +37,6 @@
     </div>
   </div>
 </nav>
-<body>
-  <div class="slider-container">
-      <div class="content-slider">
-        <div class="content-left">
-          <h1>The Illusion</h1>
-          <div class="d-flex align-items-center">
-              <div class="d-flex justify-content-around me-2">
-                  <fa-icon [icon]="faStar" class="star-rating mx-1"></fa-icon>
-                  <fa-icon [icon]="faStar" class="star-rating mx-1"></fa-icon>
-                  <fa-icon [icon]="faStar" class="star-rating mx-1"></fa-icon>
-                  <fa-icon [icon]="faStar" class="star-rating mx-1"></fa-icon>
-              </div>
-              <div class="d-flex align-items-center me-2">
-                <p class="mx-1 number-rating">4</p>
-                <img src="https://wordpress.iqonic.design/product/wp/streamit/wp-content/themes/streamit-theme/assets/images/redux/IMDB_Logo.svg" alt="">
-              </div>
-              <div class="d-flex justify-content-around align-items-center">
-                  <span class="genres-movie mx-2" >Action</span>
-                  <span>1hr:22mins</span>
-              </div>
-          </div>
-          <div class="text-slider">
-            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Perferendis blanditiis eos ullam ipsum vero quibusdam eligendi minima? Reiciendis iste quasi fuga est, modi, quas saepe reprehenderit, a quos corrupti quidem?</p>
-          </div>
-        </div>
-        <div class="content-right">
-          <h2>Watch Trailer</h2>
-        </div>
-      </div>
-  </div>
-</body>
+
 
 <router-outlet></router-outlet>
