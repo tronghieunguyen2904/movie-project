@@ -162,8 +162,10 @@
             <h4>New Movies</h4>
             <h5>View All</h5>
         </div>
-        <div class="d-flex justify-content-between">
-            <movie-component *ngFor="let i of [0, 1, 2, 3, 4]"></movie-component>
+        <div class="d-flex justify-content-between movie-container">
+          <div *ngFor="let i of movieApiData.slice(5, 10);let b = index" class="movie-box">
+            <movie-component *ngIf="b < 5" [movieImage]="i.poster_path" [routerLink]="['/detail',i.media_type,i.id]" [movieTitle]="i.title || i.name"></movie-component>
+          </div>
         </div>
     </div>
     <div>
@@ -171,10 +173,13 @@
           <h4>Latest Movies</h4>
           <h5>View All</h5>
         </div>
-        <div class="d-flex justify-content-between">
-          <movie-component *ngFor="let i of [0, 1, 2, 3, 4]"></movie-component>
-      </div>
+        <div class="d-flex justify-content-between movie-container">
+          <div *ngFor="let i of movieApiData.slice(0, 5);let b = index" class="movie-box">
+            <movie-component *ngIf="b < 5" [movieImage]="i.poster_path" [movieTitle]="i.title || i.name" [routerLink]="['/detail',i.media_type,i.id]"></movie-component>
+          </div>
+        </div>
     </div>
+    
 </div>
 
 

@@ -1,0 +1,17 @@
+<div class="contain">
+    <form action="" [formGroup]="searchForm" (ngSubmit)="submitForm()">
+        <div class="row">
+            <div class="col-lg-10">
+                <input type="text" class="form-control" formControlName="movieName" name="" id="" placeholder="Search movie here...">
+            </div>
+            <div class="col-lg-2">
+                <button class="btn btn-md">Search</button>
+            </div>
+        </div>
+    </form>
+</div>
+<div class="d-flex justify-content-between flex-wrap search-result-container align-items-center">
+<div *ngFor="let a of searchResult" class="my-3">
+    <movie-component *ngIf="a.poster_path" [movieImage]="a.poster_path" [movieTitle]="a.original_title"></movie-component>
+</div>
+</div>

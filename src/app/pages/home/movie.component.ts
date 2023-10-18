@@ -7,5 +7,6 @@ import { Component, Input } from "@angular/core";
 })
 
 export class MovieComponent{
-    
+    @Input() movieTitle:string ="";
+    @Input() movieImage:string ="";
 }
